@@ -1,7 +1,134 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="index, follow" />
+    <title>Everton Leite</title>
+    <meta property="og:title" content="Everton Leite" />
+    <meta type="title" content="Everton Leite" />
+    <meta type="description" content="Web Developer/Full Stack" />
+    <meta name="description" content="Web Developer/Full Stack" />
+    <meta property="og:description" content="Web Developer/Full Stack" />
+    <meta name="author" content="Everton Leite" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="http://www.gravatar.com/etcholeite" />
+
+	<link rel="stylesheet" href="style.css" />
+    <script src="jquery.js"></script>
+    <script src="jquery.tiptip.js"></script>
+    <link rel="stylesheet" href="jquery.tiptip.css" />
+	<script src="jquery.idtabs.js"></script>
+    <link rel="stylesheet" href="jquery.idtabs.css" />
+
+    <script>
+        $(document).ready(function(){
+			$('<img/>').attr('src', 'http://gravatar.com/avatar/a0f191ed890500db26017616a72dfaba?s=250')
+            cursor(0)
+			$(".tiptip").tipTip({delay: 0, maxWidth: "290px"})
+			$("#usual1 ul").idTabs({change: true});
+			$(".usual li a").not(".selected").click(function(){
+				$("body").removeClass("editor")
+			})
+			$(".usual li a.selected").click(function(){
+				$("body").addClass("editor")
+			})
+			
+			$(window).bind("resize", function(){
+				$(".instagram_photo_downloader iframe").css('height', ($(window).height() - 45)+'px');
+			})
+			$(window).resize()
+			
+			if (ancora() != "")
+				$("a[href='#" + ancora() + "']").click()
+        })
+        
+        function cursor(to){
+            $("#cursor").fadeTo("fast", to)
+            setTimeout("cursor(" + (to == 1 ? 0 : 1) + ")", 600)
+        }
+		
+		function add_historico(href){
+			window.history.pushState("object or string", document.title, href)
+		}
+		
+		function ancora(valor){
+			if (valor == null)
+				return window.location.hash.replace("#", "")
+			else
+				return window.location.hash.replace("#", "") == valor
+		}
+    </script>
+</head>
+<body class="editor">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-29842207-14"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-29842207-14');
+	</script>
+ 
+	<div id="usual1" class="usual"> 
+		<div id="abas">
+			<ul> 
+				<li><a href="#sobre" class="selected" style="margin-left: -40px">About.php</a></li>
+			</ul>
+			<div class="shadow"></div>
+		</div>
+		
+		<div id="sobre" class="content">
+			<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="1" style="background-color: #D7D7D7; color: #5C5C5C; text-align: right; font-family: courier; font-size: 14px; font-weight: normal; font-style: normal; padding: 10px 6px 0px 10px;">
+					</td>
+					<td width="100%" style="padding-top: 10px;">
+						<div  xmlns="http://www.w3.org/1999/xhtml" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:v1="http://www.w3.org/2006/vcard/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gr="http://purl.org/goodrelations/v1#" typeof="foaf:Person">
+							<div class="line indent0">Object {</div>
+								<div class="line indent"><span class="key">name</span>: <span class="str">"<span property="foaf:name">Everton Leite</span>"</span>,</div>
+								<div class="line indent" property="foaf:depiction" content="http://www.gravatar.com/etcholeite"><span class="key">avatar</span>: <span class="str">"<a class="tiptip" title="<img src='http://gravatar.com/avatar/a0f191ed890500db26017616a72dfaba?s=250'>" href="http://www.gravatar.com/etcholeite" target="_blank">http://www.gravatar.com/etcholeite</a>"</span>,</div>
+								<div class="line indent"><span class="key">homepage</span>: <span class="str">"<a href="https://etcho.github.io" property="foaf:homepage">https://etcho.github.io</a>"</span>,</div>
+								<div class="line indent"><span class="key">social</span>: Object {</div>
+									<div class="line indent2"><span class="key">github</span>: <span class="str">"<a href="https://github.com/etcho" target="_blank">https://github.com/etcho</a>"</span>,</div>
+									<div class="line indent2"><span class="key">linkedin</span>: <span class="str">"<a href="http://www.linkedin.com/profile/view?id=76437820" target="_blank">http://www.linkedin.com/profile/view?id=76437820</a>"</span>,</div>
+									<div class="line indent2"><span class="key">instagram</span>: <span class="str">"<a href="http://instagram.com/etcholeite" target="_blank">http://instagram.com/etcholeite</a>"</span>,</div>
+									<div class="line indent2"><span class="key">twitter</span>: <span class="str">"<a href="https://twitter.com/etcholeite" target="_blank">https://twitter.com/etcholeite</a>"</span></div>
+								<div class="line indent">}</div>
+								<div class="line indent"><span class="key">jobs</span>: Object {</div>
+									<div class="line indent2"><span class="key">la patria café e bistro</span>: <span class="str">"<a target="_blank" href="http://www.lapatria.com.br">http://www.lapatria.com.br</a>"</span></div>
+								<div class="line indent">}</div>
+								
+								<div class="line indent"><span class="key">android apps</span>: Object {</div>
+									<div class="line indent2"><span class="key">Mímica - Jogo de Adivinhação</span>: <span class="str">"<a target="_blank" href="https://play.google.com/store/apps/details?id=com.etcho.mimica">https://play.google.com/store/apps/details?id=com.etcho.mimica</a>"</span>,</div>
+									<div class="line indent2"><span class="key">Food & Beer - Pairing Food with Beer</span>: <span class="str">"<a target="_blank" href="https://play.google.com/store/apps/details?id=com.etcho.food_and_beer">https://play.google.com/store/apps/details?id=com.etcho.food_and_beer</a>"</span>,</div>
+									<div class="line indent2"><span class="key">Calculator for Volts, Amps, Ohms and Watts</span>: <span class="str">"<a target="_blank" href="https://play.google.com/store/apps/details?id=com.etcho.calculator_for_volts_amperes_ohms_watts">https://play.google.com/store/apps/details?id=com.etcho.calculator_for_volts_amperes_ohms_watts</a>"</span>,</div>
+									<div class="line indent2"><span class="key">Quick Subs - Subtitle Downloader</span>: <span class="str">"<a target="_blank" href="https://play.google.com/store/apps/details?id=com.etcho.quick_subs">https://play.google.com/store/apps/details?id=com.etcho.quick_subs</a>"</span></div>
+								<div class="line indent">}</div>
+							<div class="line indent0">}<span id="cursor">|</span></div>
+							<div style="display: none">
+								<div rel="foaf:based_near" resource="http://live.dbpedia.org/page/Rio_de_Janeiro"></div>
+								<div property="foaf:title">Mr</div>
+								<div property="foaf:nick">etcho</div>
+								<div property="foaf:givenname">Everton</div>
+								<div property="foaf:family_name">Leite</div>
+								<div property="foaf:schoolHomepage">http://www.iff.edu.br</div>
+							</div>
+						</div>
+						<script>
+							len = $("div[typeof='foaf:Person']").children("div.line").length
+							for (i=1; i<=len; i++)
+								$("div[typeof='foaf:Person']").parent().prev().append('<div class="line-count">' + i + '</div>')
+						</script>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="corner"></div>
+		&copy; 2013-2019 Everton Leite. Web Developer.
+	</div>
 </body>
 </html>

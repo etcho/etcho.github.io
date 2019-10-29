@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i,700,700i&display=swap');
+
+body{
+	font-family: 'Source Code Pro', serif;
+	color: #000;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 300;
+	margin: 0;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+
+.editor{
+	background: url(background.png) left top repeat-y #FFF;
+}
+
+.int{
+	color: #1C00CF;
+}
+
+.str, .str a, .str a:visited{
+	color: #C41A16
+}
+
+.key{
+	color: #881391;
+	font-weight: bold;
+}
+
+.indent0{
+	padding-left: 5px;
+}
+
+.indent{
+	padding-left: 25px;
+}
+
+.indent2{
+	padding-left: 45px;
+}
+
+.indent3{
+	padding-left: 65px;
+}
+
+.line, .line-count{
+	line-height: 22px;
+}
+
+.line{
+	cursor: text;
+}
+
+.line:hover{
+	background-color: #EEE;
+}
+
+#footer{
+	border-top: 1px solid #CCC;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 16px;
+	padding: 2px 0px 2px 36px;
+	background: #F0F0F0;
+	font-style: normal;
+	font-weight: bold;
+}
+
+#corner{
+	background: url(corner.png) center center no-repeat;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	margin-left: -33px;
+	margin-top: 10px;
+}
+
+#cursor{
+	font-weight: bold;
+	position: absolute;
+	font-size: 24px;
+	margin-top: -2px;
+}
+
+.shadow{
+	width: 100%;
+	height: 28px;
+	position: absolute;
+	box-shadow: 0px 0px 4px #777;
+	z-index: 10;
+	margin-top: -28px;
+}
+
+#abas{
+	position: fixed;
+	margin-top: -25px;
+	width: 100%;
+	background: #F0F0F0;
+}
