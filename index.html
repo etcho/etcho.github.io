@@ -1,148 +1,264 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="robots" content="index, follow" />
-    <title>Everton Leite</title>
-    <meta property="og:title" content="Everton Leite" />
-    <meta type="title" content="Everton Leite" />
-    <meta type="description" content="Web Developer/Full Stack" />
-    <meta name="description" content="Web Developer/Full Stack" />
-    <meta property="og:description" content="Web Developer/Full Stack" />
-    <meta name="author" content="Everton Leite" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="http://www.gravatar.com/etcholeite" />
+<!DOCTYPE html>
+<html lang="en">
 
-	<link rel="stylesheet" href="style.css" />
-    <script src="jquery.js"></script>
-    <script src="jquery.tiptip.js"></script>
-    <link rel="stylesheet" href="jquery.tiptip.css" />
-	<script src="jquery.idtabs.js"></script>
-    <link rel="stylesheet" href="jquery.idtabs.css" />
+    <head>
 
-    <script>
-        $(document).ready(function(){
-			$('<img/>').attr('src', 'http://gravatar.com/avatar/a0f191ed890500db26017616a72dfaba?s=250')
-            cursor(0)
-			$(".tiptip").tipTip({delay: 0, maxWidth: "290px"})
-			$("#usual1 ul").idTabs({change: true});
-			$(".usual li a").not(".selected").click(function(){
-				$("body").removeClass("editor")
-			})
-			$(".usual li a.selected").click(function(){
-				$("body").addClass("editor")
-			})
-			
-			$(window).bind("resize", function(){
-				$(".instagram_photo_downloader iframe").css('height', ($(window).height() - 45)+'px');
-			})
-			$(window).resize()
-			
-			if (ancora() != "")
-				$("a[href='#" + ancora() + "']").click()
-        })
-        
-        function cursor(to){
-            $("#cursor").fadeTo("fast", to)
-            setTimeout("cursor(" + (to == 1 ? 0 : 1) + ")", 600)
-        }
-		
-		function add_historico(href){
-			window.history.pushState("object or string", document.title, href)
-		}
-		
-		function ancora(valor){
-			if (valor == null)
-				return window.location.hash.replace("#", "")
-			else
-				return window.location.hash.replace("#", "") == valor
-		}
-    </script>
-</head>
-<body class="editor">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-29842207-14"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-	  gtag('config', 'UA-29842207-14');
-	</script>
- 
-	<div id="usual1" class="usual"> 
-		<div id="abas">
-			<ul> 
-				<li><a href="#sobre" class="selected" style="margin-left: -40px">About.php</a></li>
-			</ul>
-			<div class="shadow"></div>
-		</div>
-		
-		<div id="sobre" class="content">
-			<table width="100%" height="100%" cellpadding="0" cellspacing="0">
-				<tr>
-					<td width="1" style="background-color: #D7D7D7; color: #5C5C5C; text-align: right; font-family: courier; font-size: 14px; font-weight: normal; font-style: normal; padding: 10px 6px 0px 10px;">
-					</td>
-					<td width="100%" style="padding-top: 10px;">
-						<div  xmlns="http://www.w3.org/1999/xhtml" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:v1="http://www.w3.org/2006/vcard/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gr="http://purl.org/goodrelations/v1#" typeof="foaf:Person">
-							<div class="line indent0">Object {</div>
-								<div class="line indent"><span class="key">name</span>: <span class="str">"<span property="foaf:name">Everton Leite</span>"</span>,</div>
-								<div class="line indent" property="foaf:depiction" content="http://www.gravatar.com/etcholeite"><span class="key">avatar</span>: <span class="str">"<a class="tiptip" title="<img src='http://gravatar.com/avatar/a0f191ed890500db26017616a72dfaba?s=250'>" href="http://www.gravatar.com/etcholeite" target="_blank">http://www.gravatar.com/etcholeite</a>"</span>,</div>
-								<div class="line indent"><span class="key">homepage</span>: <span class="str">"<a href="https://etcho.github.io" property="foaf:homepage">https://etcho.github.io</a>"</span>,</div>
-								<div class="line indent"><span class="key">social</span>: Object {</div>
-									<div class="line indent2"><span class="key">github</span>: <span class="str">"<a href="https://github.com/etcho" target="_blank">https://github.com/etcho</a>"</span>,</div>
-									<div class="line indent2"><span class="key">linkedin</span>: <span class="str">"<a href="http://www.linkedin.com/profile/view?id=76437820" target="_blank">http://www.linkedin.com/profile/view?id=76437820</a>"</span>,</div>
-									<div class="line indent2"><span class="key">instagram</span>: <span class="str">"<a href="http://instagram.com/etcholeite" target="_blank">http://instagram.com/etcholeite</a>"</span>,</div>
-									<div class="line indent2"><span class="key">twitter</span>: <span class="str">"<a href="https://twitter.com/etcholeite" target="_blank">https://twitter.com/etcholeite</a>"</span></div>
-								<div class="line indent">},</div>
-								<div class="line indent"><span class="key">jobs</span>: Object {</div>
-									<div class="line indent2"><span class="key">la patria café e bistro</span>: <span class="str">"<a target="_blank" href="http://www.lapatria.com.br">http://www.lapatria.com.br</a>"</span></div>
-								<div class="line indent">},</div>
-								
-								<div class="line indent"><span class="key">android apps</span>: Object {</div>
-									<div class="line indent2"><span class="key">Mímica - Jogo de Adivinhação</span>: <span class="str">"<a target="_blank" href="https://play.google.com/store/apps/details?id=com.etcho.mimica">https://play.google.com/store/apps/details?id=com.etcho.mimica</a>"</span>,</div>
-									<div class="line indent2"><span class="key">Food & Beer - Pairing Food with Beer</span>: <span class="str">"<a target="_blank" href="https://play.google.com/store/apps/details?id=com.etcho.food_and_beer">https://play.google.com/store/apps/details?id=com.etcho.food_and_beer</a>"</span>,</div>
-									<div class="line indent2"><span class="key">Calculator for Volts, Amps, Ohms and Watts</span>: <span class="str">"<a target="_blank" href="https://play.google.com/store/apps/details?id=com.etcho.calculator_for_volts_amperes_ohms_watts">https://play.google.com/store/apps/details?id=com.etcho.calculator_for_volts_amperes_ohms_watts</a>"</span>,</div>
-									<div class="line indent2"><span class="key">Quick Subs - Subtitle Downloader</span>: <span class="str">"<a target="_blank" href="https://play.google.com/store/apps/details?id=com.etcho.quick_subs">https://play.google.com/store/apps/details?id=com.etcho.quick_subs</a>"</span></div>
-								<div class="line indent">}</div>
-								
-								<div class="line indent"><span class="key">stock photography portfolio</span>: Object {</div>
-									<div class="line indent2"><span class="key">Shutterstock</span>: <span class="str">"<a target="_blank" href="https://www.shutterstock.com/g/etcho">https://www.shutterstock.com/g/etcho</a>"</span>,</div>
-									<div class="line indent2"><span class="key">Adobe Stock</span>: <span class="str">"<a target="_blank" href="https://stock.adobe.com/br/contributor/209234709/Everton">https://stock.adobe.com/br/contributor/209234709/Everton</a>"</span>,</div>
-									<div class="line indent2"><span class="key">iStock</span>: <span class="str">"<a target="_blank" href="https://www.istockphoto.com/br/portfolio/etcho">https://www.istockphoto.com/br/portfolio/etcho</a>"</span>,</div>
-									<div class="line indent2"><span class="key">Dreams Time</span>: <span class="str">"<a target="_blank" href="https://www.dreamstime.com/Etcholeite_info">https://www.dreamstime.com/Etcholeite_info</a>"</span></div>
-									<div class="line indent2"><span class="key">Big Stock</span>: <span class="str">"<a target="_blank" href="https://www.bigstockphoto.com/pt/search/?contributor=etcho">https://www.bigstockphoto.com/pt/search/?contributor=etcho</a>"</span></div>
-									<div class="line indent2"><span class="key">Deposit Photos</span>: <span class="str">"<a target="_blank" href="https://br.depositphotos.com/portfolio-33132558.html">https://br.depositphotos.com/portfolio-33132558.html</a>"</span></div>
-									<div class="line indent2"><span class="key">Can Stock Photo</span>: <span class="str">"<a target="_blank" href="https://www.canstockphoto.com/stock-image-portfolio/etcho/">https://www.canstockphoto.com/stock-image-portfolio/etcho/</a>"</span></div>
-									<div class="line indent2"><span class="key">Fine Art America</span>: <span class="str">"<a target="_blank" href="https://fineartamerica.com/profiles/everton-leite">https://fineartamerica.com/profiles/everton-leite</a>"</span></div>
-									<div class="line indent2"><span class="key">Most Photos</span>: <span class="str">"<a target="_blank" href="https://www.mostphotos.com/en-us/user/etcho">https://www.mostphotos.com/en-us/user/etcho</a>"</span></div>
-									<div class="line indent2"><span class="key">Pond5</span>: <span class="str">"<a target="_blank" href="https://www.pond5.com/artist/etcholeite">https://www.pond5.com/artist/etcholeite</a>"</span></div>
-								<div class="line indent">}</div>
-								
-							<div class="line indent0">}<span id="cursor">|</span></div>
-							<div style="display: none">
-								<div rel="foaf:based_near" resource="http://live.dbpedia.org/page/Rio_de_Janeiro"></div>
-								<div property="foaf:title">Mr</div>
-								<div property="foaf:nick">etcho</div>
-								<div property="foaf:givenname">Everton</div>
-								<div property="foaf:family_name">Leite</div>
-								<div property="foaf:schoolHomepage">http://www.iff.edu.br</div>
-							</div>
-						</div>
-						<script>
-							len = $("div[typeof='foaf:Person']").children("div.line").length
-							for (i=1; i<=len; i++)
-								$("div[typeof='foaf:Person']").parent().prev().append('<div class="line-count">' + i + '</div>')
-						</script>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
+        <title>Everton Leite</title>
 
-	<div id="footer">
-		<div id="corner"></div>
-		&copy; 2013-2019 Everton Leite. Web Developer.
-	</div>
-</body>
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="css/agency.css" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Etcho</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#apps">Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#stock">Stock Photos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="masthead">
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-heading text-uppercase">I'm Everton Leite</div>
+                    <div class="intro-lead-in">Web Developer and Stock Photographer</div>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-section" id="apps">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Apps</h2>
+                        <h3 class="section-subheading text-muted">My current Android apps available on Play Store</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <a href="https://play.google.com/store/apps/details?id=com.etcho.mimica" target="_blank">
+                            <div class="app-img">
+                                <img src="img/apps/mime.png" />
+                            </div>
+                            <h4 class="service-heading">Mime Game</h4>
+                        </a>
+                        <p class="text-muted">Guessing game to play with friends or family on parties and gatherings</p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://play.google.com/store/apps/details?id=com.etcho.food_and_beer" target="_blank">
+                            <div class="app-img">
+                                <img src="img/apps/food_and_beer.png" />
+                            </div>
+                            <h4 class="service-heading">Food & Beer</h4>
+                        </a>
+                        <p class="text-muted">Make it easy to pair foods and beers of all kinds</p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://play.google.com/store/apps/details?id=com.etcho.calculator_for_volts_amperes_ohms_watts" target="_blank">
+                            <div class="app-img">
+                                <img src="img/apps/calculator.png" />
+                            </div>
+                            <h4 class="service-heading">Electrical Calculator</h4>
+                        </a>
+                        <p class="text-muted">Easily convert watts, amps, ohms and volts between each other</p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://play.google.com/store/apps/details?id=com.etcho.quick_subs" target="_blank">
+                            <div class="app-img">
+                                <img src="img/apps/quick_subs.png" />
+                            </div>
+                            <h4 class="service-heading">Quick Subs</h4>
+                        </a>
+                        <p class="text-muted">Download subtitles for your movies and shows directly from your android</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="bg-light page-section" id="stock">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Stock Photography Portfolios</h2>
+                        <h3 class="section-subheading text-muted">Here you can find my photos for sale on some stock agencies</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://www.shutterstock.com/g/etcho" target="_blank">
+                            <div class="team-member shutterstock">
+                                <img class="mx-auto rounded-circle" src="img/stock/shutterstock.png" alt="">
+                                <h4>Shutterstock</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://stock.adobe.com/br/contributor/209234709/Everton" target="_blank">
+                            <div class="team-member adobe">
+                                <img class="mx-auto rounded-circle" src="img/stock/adobe.png" alt="">
+                                <h4>Adobe Stock</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://www.istockphoto.com/br/portfolio/etcho" target="_blank">
+                            <div class="team-member istock">
+                                <img class="mx-auto rounded-circle" src="img/stock/istock.png" alt="">
+                                <h4>iStock</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://www.dreamstime.com/Etcholeite_info" target="_blank">
+                            <div class="team-member dreamstime">
+                                <img class="mx-auto rounded-circle" src="img/stock/dreamstime.png" alt="">
+                                <h4>Dreamstime</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://www.bigstockphoto.com/pt/search/?contributor=etcho" target="_blank">
+                            <div class="team-member bigstock">
+                                <img class="mx-auto rounded-circle" src="img/stock/big.png" alt="">
+                                <h4>Big Stock</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://br.depositphotos.com/portfolio-33132558.html?sorting=best_sales" target="_blank">
+                            <div class="team-member deposit">
+                                <img class="mx-auto rounded-circle" src="img/stock/deposit.png" alt="">
+                                <h4>Deposit Photos</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://www.canstockphoto.com/stock-image-portfolio/etcho/" target="_blank">
+                            <div class="team-member canstock">
+                                <img class="mx-auto rounded-circle" src="img/stock/canstock.png" alt="">
+                                <h4>Can Stock</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://www.yayimages.com/search?phrase=username%3Aetcho&type=-1" target="_blank">
+                            <div class="team-member yay">
+                                <img class="mx-auto rounded-circle" src="img/stock/yay.png" alt="">
+                                <h4>Yay Images</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://www.pond5.com/artist/etcholeite" target="_blank">
+                            <div class="team-member pond5">
+                                <img class="mx-auto rounded-circle" src="img/stock/pond5.png" alt="">
+                                <h4>Pond5</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://www.mostphotos.com/en-us/user/etcho" target="_blank">
+                            <div class="team-member mostphotos">
+                                <img class="mx-auto rounded-circle" src="img/stock/mostphotos.png" alt="">
+                                <h4>Most Photos</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-43 col-md-3 col-lg-2">
+                        <a href="https://creator-en.pixtastock.com/@etcho" target="_blank">
+                            <div class="team-member pixta">
+                                <img class="mx-auto rounded-circle" src="img/stock/pixta.png" alt="">
+                                <h4>Pixta</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="large text-muted">My portfolio is full of product photos, electronic, climbing gear and common day-to-day scenes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; Everton Leite 2020</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/etcho" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/etcholeite" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/evertonleite/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://instagram.com/etcholeite" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/agency.js"></script>
+
+    </body>
+
 </html>
